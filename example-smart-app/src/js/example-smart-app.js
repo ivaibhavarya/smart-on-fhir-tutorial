@@ -26,7 +26,8 @@ console.log("Patient: " + JSON.stringify(patient))
                         }
                     }
                 });
-
+                   
+                console.log("Obv: " + JSON.stringify(obv))
                 $.when(pt, obv).fail(onError);
 
                 $.when(pt, obv).done(function(patient, obv) {
