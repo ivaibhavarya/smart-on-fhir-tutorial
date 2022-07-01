@@ -149,7 +149,7 @@
         $('#hdl').html(p.hdl);
     };
 
-    FHIR.oauth2.ready(onReady, onError);
-    return ret.promise();
+//     FHIR.oauth2.ready(onReady, onError);
+//     return ret.promise();
 
 })(window);
