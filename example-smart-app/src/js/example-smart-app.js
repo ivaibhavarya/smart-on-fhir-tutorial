@@ -12,9 +12,9 @@
         function onReady(smart) {
             if (smart.hasOwnProperty('patient')) {
                 var patient = smart.patient;
-console.log("Patient: " + patient)
+console.log("Patient: " + JSON.stringify(patient))
                 var pt = patient.read();
-                console.log("Pt: " + pt)
+                console.log("Pt: " + JSON.stringify(pt))
                 var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
                     query: {
