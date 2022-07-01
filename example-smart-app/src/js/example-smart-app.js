@@ -32,8 +32,10 @@ console.log("Patient: " + JSON.stringify(patient))
 
                 $.when(pt, obv).done(function(patient, obv) {
                     var byCodes = smart.byCodes(obv, 'code');
+                    console.log("Inside Obv: " + JSON.stringify(obv))
+                    console.log("Inside Patient: " + JSON.stringify(patient))
                     var gender = patient.gender;
-
+                
                     var fname = '';
                     var lname = '';
 
